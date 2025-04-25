@@ -1,6 +1,6 @@
 {
   "scripts": {
-      "watch": "tailwindcss -i ./static/css/main_style.css -o ./dist/main_style.css --watch"
+      "watch": "tailwindcss -i ./static/css/style.css -o ./dist/main_style.css --watch"
     },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4",
