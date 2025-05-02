@@ -42,3 +42,37 @@ if (showLoginBtn && showSignupBtn && loginForm && signupForm) {
 
     });
 }
+const radius = 80;
+const circumference = 2 * Math.PI * radius;
+const totalDays = 365;
+
+const daysLeft = 145;
+const daysPassed = daysLeft;
+
+const progress = daysPassed / totalDays;
+const targetOffset = circumference - (circumference * progress);
+
+const progressCircle = document.querySelector('#progressCircle');
+const progressText = document.querySelector('#pgtext');
+if (progressCircle) {
+  progressCircle.setAttribute('stroke-dasharray', circumference);
+
+
+  progressCircle.setAttribute('stroke-dashoffset', circumference);
+
+
+  let currentOffset = circumference;
+  const step = (circumference - targetOffset) / 40;
+  function animate() {
+    if (currentOffset > targetOffset) {
+      currentOffset -= step;
+      if (currentOffset < targetOffset) currentOffset = targetOffset;
+      progressCircle.setAttribute('stroke-dashoffset', currentOffset);
+      requestAnimationFrame(animate);
+    }
+  }
+  animate();
+}
+if (progressText) {
+  progressText.textContent = daysLeft;
+}
