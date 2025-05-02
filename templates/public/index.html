@@ -1,12 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../dist/main_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <!-- ...existing code... -->
+    <main class="flex flex-col">
+        <header>
+            <nav class="flex justify-between items-center px-3 shadow pr-45">
+                <!-- Nav Right -->
+                <div class="flex items-end">
+                    <!-- Logo -->
+                     <a href="#">
+                        <div class="abslote right-0 top-0 flex items-center z-10 h-15 w-15">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-800" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                            </svg>
+                        </div>
+                     </a>
+                    <a href="#" class="px-4 py-2 hover:bg-amber-500 hover:text-white duration-400">صفحه اصلی</a>
+                    <a href="#" class="px-4 py-2 hover:bg-amber-500 hover:text-white duration-400">دوره ها</a>
+                    <a href="#" class="px-4 py-2 hover:bg-amber-500 hover:text-white duration-400">اخبار و مقالات</a>
+                    <a href="#" class="px-4 py-2 hover:bg-amber-500 hover:text-white duration-400">تماس با ما</a>
+                </div>
+                <!-- Nav Left -->
+                <div>
+                    <a href="#" class="inline-flex items-center rounded-lg hover:bg-gray-100 transition p-2 mt-1">
+                        <div class="w-10 h-10 rounded-full overflow-hidden ring-2 ring-gray-300">
+                            <img class="w-full h-full object-cover" src="../../static/images/user.jpg" alt="User Profile">
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section class="relative w-full overflow-hidden h-110">
+            <div class="swiper mySwiper h-full flex items-center">
+                <div class="swiper-wrapper flex items-center">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: url('../../static/images/slide1.jpg')">
+                        <div class="text-center text-white px-40 flex flex-col items-start justify-center h-full">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeInDown">عنوان اسلاید ۱</h1>
+                            <p class="text-lg md:text-2xl animate-fadeInUp">توضیحی مختصر برای اسلاید اول</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: url('../../static/images/slide2.jpg')">
+                        <div class="text-center text-white flex flex-col items-start justify-center h-full px-40">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeInDown">عنوان اسلاید ۲</h1>
+                            <p class="text-lg md:text-2xl animate-fadeInUp">توضیحی مختصر برای اسلاید دوم</p>
+                        </div>
+                    </div>
+                    <!-- اسلایدهای بیشتر در صورت نیاز -->
+                </div>
+              <!-- دکمه‌های ناوبری -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">درباره انجمن</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-white shadow p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">سابقه فعالیت</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                    انجمن از سال ۱۳۸۰ فعالیت خود را در حوزه آموزش تخصصی آغاز کرده است و تاکنون بیش از ۵۰۰۰ نفر را آموزش داده است.
+                    </p>
+                </div>
+
+                <div class="bg-white shadow p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">اهداف</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                    هدف اصلی انجمن ارتقای سطح دانش تخصصی اعضا و فراهم کردن بستری برای ارتباط علمی است.
+                    </p>
+                </div>
+
+                <div class="bg-white shadow p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">دستاوردها</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        انتشار ۱۲ نشریه، برگزاری ۴۰ دوره تخصصی و همکاری با بیش از ۱۵ نهاد علمی و پژوهشی.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center py-12 px-5 bg-gray-100">
+            <h2>اطلاعات دوره</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Course 1 -->
+               <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 2 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 3 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 4 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 5 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 6 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 7 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 8 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 9 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+                <!-- Course 10 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex">
+                    <img src="../../static/images/user.jpg" alt="" class="w-full h-40 object-cover rounded-lg rounded-l-lg mb-4 ml-2">
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-4">عنوان دوره</h3>
+                        <p class="text-sm text-gray-400 mb-4">توضیح کوتاه و تک جمله ای درباره دوره</p>
+                    </div>
+                    <a class="mt-auto self-start text-amber-600 hover:text-amber-800 font-medium transition" href="">مشاهده اطلاعات دوره</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">اعضای انجمن</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg-grid-cols-4 gap-6">
+                <!-- Person 1 -->
+                <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition p-4 flex flex-col items-center">
+                    <img class="w-32 h-32 object-cover rounded-full mb-4" src="../../static/images/user.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">محمد امینی</h3>
+                    <p class="text-sm text-gray-600 mb-4">نویسنده فرانت و بک اند</p>
+                </div>
+                <!-- Person 2 -->
+                <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition p-4 flex flex-col items-center">
+                    <img class="w-32 h-32 object-cover rounded-full mb-4" src="../../static/images/user.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">محمد امینی</h3>
+                    <p class="text-sm text-gray-600 mb-4">نویسنده فرانت و بک اند</p>
+                </div>
+                <!-- Person 3 -->
+                <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition p-4 flex flex-col items-center">
+                    <img class="w-32 h-32 object-cover rounded-full mb-4" src="../../static/images/user.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">محمد امینی</h3>
+                    <p class="text-sm text-gray-600 mb-4">نویسنده فرانت و بک اند</p>
+                </div>
+                <!-- Person 4 -->
+                <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition p-4 flex flex-col items-center">
+                    <img class="w-32 h-32 object-cover rounded-full mb-4" src="../../static/images/user.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">محمد امینی</h3>
+                    <p class="text-sm text-gray-600 mb-4">نویسنده فرانت و بک اند</p>
+                </div>
+                <!-- Person 5 -->
+                <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition p-4 flex flex-col items-center">
+                    <img class="w-32 h-32 object-cover rounded-full mb-4" src="../../static/images/user.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">محمد امینی</h3>
+                    <p class="text-sm text-gray-600 mb-4">نویسنده فرانت و بک اند</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">آخرین اخبار</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <a href="#">
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <img class="w-full h-40 object-cover rounded-t-lg" src="../../static/images/user.jpg" alt="">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold mb-2 text-gray-800">عنوان خبر</h3>
+                            <p class="text-sm text-gray-600 mb-4">خلاصه ای کوتاه درباره خبر و متن خبر که میتونه یک یا دو جمله باشه</p>
+                            <div class="text-xs text-gray-400 mb-2">1 اردیبهشت 1404</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <img class="w-full h-40 object-cover rounded-t-lg" src="../../static/images/user.jpg" alt="">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold mb-2 text-gray-800">عنوان خبر</h3>
+                            <p class="text-sm text-gray-600 mb-4">خلاصه ای کوتاه درباره خبر و متن خبر که میتونه یک یا دو جمله باشه</p>
+                            <div class="text-xs text-gray-400 mb-2">1 اردیبهشت 1404</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <img class="w-full h-40 object-cover rounded-t-lg" src="../../static/images/user.jpg" alt="">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold mb-2 text-gray-800">عنوان خبر</h3>
+                            <p class="text-sm text-gray-600 mb-4">خلاصه ای کوتاه درباره خبر و متن خبر که میتونه یک یا دو جمله باشه</p>
+                            <div class="text-xs text-gray-400 mb-2">1 اردیبهشت 1404</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <img class="w-full h-40 object-cover rounded-t-lg" src="../../static/images/user.jpg" alt="">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold mb-2 text-gray-800">عنوان خبر</h3>
+                            <p class="text-sm text-gray-600 mb-4">خلاصه ای کوتاه درباره خبر و متن خبر که میتونه یک یا دو جمله باشه</p>
+                            <div class="text-xs text-gray-400 mb-2">1 اردیبهشت 1404</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <img class="w-full h-40 object-cover rounded-t-lg" src="../../static/images/user.jpg" alt="">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold mb-2 text-gray-800">عنوان خبر</h3>
+                            <p class="text-sm text-gray-600 mb-4">خلاصه ای کوتاه درباره خبر و متن خبر که میتونه یک یا دو جمله باشه</p>
+                            <div class="text-xs text-gray-400 mb-2">1 اردیبهشت 1404</div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+            </div>
+        </section>
+
+        <footer class="bg-gray-100 border-t mt-12">
+            <div class="container mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+
+              <!-- بخش لوگو و توضیح کوتاه -->
+                <div>
+                    <h4 class="text-lg font-bold mb-2">انجمن آموزشی</h4>
+                    <p class="text-gray-600">با هدف ارتقاء دانش و مهارت‌های تخصصی، انجمن آموزشی همراه شماست.</p>
+                </div>
+
+                <!-- لینک‌ها -->
+                <div>
+                    <h4 class="font-bold mb-2">لینک‌های سریع</h4>
+                    <ul class="space-y-1 text-gray-600">
+                        <li><a href="#" class="hover:text-amber-600">صفحه اصلی</a></li>
+                        <li><a href="#" class="hover:text-amber-600">دوره‌ها</a></li>
+                        <li><a href="#" class="hover:text-amber-600">اخبار</a></li>
+                        <li><a href="#" class="hover:text-amber-600">تماس با ما</a></li>
+                    </ul>
+                </div>
+
+              <!-- شبکه‌های اجتماعی -->
+                <div>
+                <h4 class="font-bold mb-2">دنبال کنید</h4>
+                    <div class="flex space-x-3 justify-start rtl:space-x-reverse">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                                <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                                <path d="M228.88,26.19a9,9,0,0,0-9.16-1.57L17.06,103.93a14.22,14.22,0,0,0,2.43,27.21L72,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L165,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L231.77,35A9,9,0,0,0,228.88,26.19Zm-61.14,36L78.15,126.35l-49.6-9.73ZM88,200V152.52l24.79,21.74Zm87.53,8L92.85,135.5l119-85.29Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <!-- آیکون‌های دیگر -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-xs text-gray-500 border-t py-4 mt-4">
+                © ۱۴۰۴ انجمن آموزشی. تمام حقوق محفوظ است.
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../static/js/script.js"></script>
+
 </body>
 </html>
