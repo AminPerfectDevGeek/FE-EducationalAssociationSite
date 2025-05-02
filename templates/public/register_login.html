@@ -22,6 +22,54 @@
             </a>
         </div>
     </nav>
+
+    <main>
+        <div class="max-w-md mx-auto mt-10">
+            <div class="flex justify-center mb-6">
+                <button id="showLogin" class="px-4 py-2 bg-orange-300 rounded-l hover:bg-orange-400">ورود</button>
+                <button id="showSignup" class="px-4 py-2 bg-gray-200 rounded-r hover:bg-gray-300">ثبت نام</button>
+            </div>
+
+            <form id="loginForm" class="space-y-4">
+                <h2 class="text-xl font-semibold mb-2 text-center">ورود</h2>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="loginEmail">ایمیل</label>
+                    <input id="loginEmail" type="email" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="loginPassword">رمز عبور</label>
+                    <input id="loginPassword" type="password" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                </div>
+
+                <button type="submit" class="w-full bg-amber-500 text-white py-2 rounded hover:bg-amber-600 transition">ورود</button>
+            </form>
+
+
+            <form id="signupForm" class="space-y-4 hidden">
+                <h2 class="text-xl font-semibold mb-2 text-center">ثبت‌نام</h2>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="signupName">نام کامل</label>
+                    <input id="signupName" type="text" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="signupEmail">ایمیل</label>
+                    <input id="signupEmail" type="email" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="signupPassword">رمز عبور</label>
+                    <input id="signupPassword" type="password" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                </div>
+
+                <button type="submit" class="w-full bg-amber-500 text-white py-2 rounded hover:bg-amber-600 transition">ثبت‌نام</button>
+            </form>
+        </div>
+    </main>
+
     <footer class="bg-gray-100 border-t mt-12">
         <div class="container mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
 
@@ -68,5 +116,7 @@
             © ۱۴۰۴ انجمن آموزشی. تمام حقوق محفوظ است.
         </div>
     </footer>
+
+    <!-- <script src="../../static/js/script.js"></script> -->
 </body>
 </html>
